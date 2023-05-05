@@ -1,4 +1,4 @@
-#!/home/islomov/Desktop/Api/Books-Api/env/bin/python3
+#!/home/islomov/lessons_api/Books-Api/env/bin/python3.11
 # -*- coding: utf-8 -*-
 import re
 import sys
