@@ -40,6 +40,7 @@ INSTALLED_APPS = [
 
     # packages
     'rest_framework',
+
     'drf_yasg',
 
 
@@ -59,6 +60,13 @@ MIDDLEWARE = [
 ]
 
 ROOT_URLCONF = 'library_project.urls'
+
+REST_FRAMEWORK = {
+    'DEFAULT_AUTHENTICATION_CLASSES': (
+        'rest_framework.authentication.TokenAuthentication',
+        'rest_framework.authentication.SessionAuthentication',
+    )
+}
 
 TEMPLATES = [
     {
